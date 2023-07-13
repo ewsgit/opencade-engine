@@ -4,11 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b556a593-2a13-472b-aa77-911f20d2202b" name="Changes" comment="" />
+    <list default="true" id="b556a593-2a13-472b-aa77-911f20d2202b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/editor/renderer/src/bouncingBox.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/canvas.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/helpers/pxToUnits.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/helpers/randomString.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/helpers/unitsToPx.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/input/inputManager.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/input/keyboard/key.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/layer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/objects/box.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/editor/main/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/editor/main/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/editor/renderer/src/renderer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/editor/renderer/src/renderer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/object.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/object.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/scene.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/scene.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.web.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.web.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EditorConfigPreviewManager">
+    <editorConfig file="$PROJECT_DIR$/.editorconfig" previewFile="$PROJECT_DIR$/src/editor/main/index.ts" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -16,6 +38,34 @@
         <option value="TypeScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ewsgit&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="b0d14a1b-14a6-475a-8eb5-36c1359e45bd" />
+        <option name="url" value="git@github.com:/ewsgit/opencade-engine.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///AIAssistantSnippet" root0="ESSENTIAL" />
+    <setting file="mock:///AIAssistantSnippet" root0="ESSENTIAL" />
+    <setting file="mock:///AIAssistantSnippet" root0="ESSENTIAL" />
+    <setting file="mock:///AIAssistantSnippet" root0="ESSENTIAL" />
+    <setting file="mock:///AIAssistantSnippet" root0="ESSENTIAL" />
+    <setting file="mock:///AIAssistantSnippet" root0="ESSENTIAL" />
+    <setting file="mock:///AIAssistantSnippet" root0="ESSENTIAL" />
+    <setting file="mock:///AIAssistantSnippet" root0="ESSENTIAL" />
+    <setting file="mock:///AIAssistantSnippet" root0="ESSENTIAL" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="enpzj81s" />
@@ -30,28 +80,39 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\ewsgi\\WebstormProjects\\opencade-engine\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Users\\ewsgi\\WebstormProjects\\opencade-engine\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ewsgi/WebstormProjects/opencade-engine/src/engine/helpers&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettier.import.notification.dismissed&quot;: &quot;true&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\ewsgi\\WebstormProjects\\opencade-engine\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\ewsgi\\WebstormProjects\\opencade-engine\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ewsgi\WebstormProjects\opencade-engine\src\engine\helpers" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ewsgi\WebstormProjects\opencade-engine\src\editor" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b556a593-2a13-472b-aa77-911f20d2202b" name="Changes" comment="" />
@@ -60,6 +121,10 @@
       <option name="presentableId" value="Default" />
       <updated>1689095299009</updated>
       <workItem from="1689095300014" duration="3533000" />
+      <workItem from="1689101711885" duration="6436000" />
+      <workItem from="1689174120616" duration="4268000" />
+      <workItem from="1689264897012" duration="8897000" />
+      <workItem from="1689278222448" duration="1371000" />
     </task>
     <servers />
   </component>

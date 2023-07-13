@@ -1,4 +1,5 @@
 import Scene from './scene'
+import Layer from './layer'
 
 export interface SceneObjectProperties {
   position: {
@@ -13,9 +14,9 @@ export interface SceneObjectProperties {
 
 export default class SceneObject {
   properties: SceneObjectProperties
-  parent: SceneObject | Scene
+  parent: SceneObject | Layer
 
-  constructor() {
+  constructor(parent: SceneObject | Layer) {
     this.properties = {
       position: {
         x: 0,
@@ -26,12 +27,43 @@ export default class SceneObject {
         height: 0
       }
     }
+    this.parent = parent
+  }
+
+  getScene(): Scene {
+    function testNext(object: SceneObject): Scene {
+      if (object.parent instanceof Layer) {
+        return object.parent.parent
+      }
+
+      return testNext(object)
+    }
+
+    if (this.parent instanceof Layer) {
+      return this.parent.parent
+    }
+
+    return testNext(this)
+  }
+
+  getLayer(): Layer {
+    function testNext(object: SceneObject): Layer {
+      if (object.parent instanceof Layer) {
+        return object.parent
+      }
+
+      return testNext(object)
+    }
+
+    if (this.parent instanceof Layer) {
+      return this.parent
+    }
+
+    return testNext(this)
   }
 
   render(): this {
-    const { x, y } = this.properties.position
-    const { width, height } = this.properties.bounds
-
+    console.log('[OpenCade Engine] Rendering Object')
     return this
   }
 }

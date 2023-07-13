@@ -1,20 +1,31 @@
-import SceneObject from './object'
+import Layer from './layer'
+import OpenCadeEngine from './index'
 
 export default class Scene {
-  children: SceneObject[]
+  layers: Layer[]
+  engine: OpenCadeEngine
 
-  constructor() {
-    this.children = []
+  constructor(engine: OpenCadeEngine) {
+    this.layers = []
+    this.engine = engine
+    this.layers.push(new Layer(this))
+    this.layers[0].canvas.element.style.backgroundColor = '#222222'
   }
 
   // TODO: implement at a later date
-  loadFile(path: string): this {
+  loadFile(_path: string): this {
     return this
   }
 
-  // TODO: implement this
+  addLayer(layer: Layer): this {
+    this.layers.push(layer)
+
+    return this
+  }
+
   render(): this {
-    this.children.forEach((child) => child.render())
+    console.log('[OpenCade Engine] Rendering layers')
+    this.layers.forEach((layer) => layer.render())
 
     return this
   }

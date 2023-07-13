@@ -1,20 +1,26 @@
-import { app, shell, BrowserWindow } from 'electron'
+import * as electron from 'electron'
+import { app, BrowserWindow, shell } from 'electron'
 import { join } from 'path'
-import { optimizer, is } from '@electron-toolkit/utils'
+import { is, optimizer } from '@electron-toolkit/utils'
 // @ts-ignore
 import icon from '../resources/icon.png?asset'
 
+let mainWindow: BrowserWindow
+
+const DEFAULT_APPLICATION_WINDOW_WIDTH = 900
+
 function createWindow(): void {
-  const mainWindow = new BrowserWindow({
-    width: 900,
-    height: 670,
-    show: false,
+  mainWindow = new BrowserWindow({
+    width: DEFAULT_APPLICATION_WINDOW_WIDTH,
+    height: (DEFAULT_APPLICATION_WINDOW_WIDTH / 16) * 9,
+    show: true,
     autoHideMenuBar: true,
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       sandbox: false
-    }
+    },
+    backgroundMaterial: 'none'
   })
 
   mainWindow.on('ready-to-show', () => {

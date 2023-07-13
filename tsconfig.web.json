@@ -1,7 +1,7 @@
 {
   "extends": "@electron-toolkit/tsconfig/tsconfig.web.json",
   "include": [
-    "src/editor/renderer/**/*.ts", "src/preload/*.d.ts"],
+    "src/editor/renderer/**/*.ts", "src/preload/*.d.ts", "src/engine/**/*.ts"],
   "compilerOptions": {
     "composite": true
   }
